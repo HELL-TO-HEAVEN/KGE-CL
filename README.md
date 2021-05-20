@@ -25,7 +25,7 @@ please run the following commands.
 ```shell script
 #################################### WN18RR ####################################
 # RESCAL
-CUDA_VISIBLE_DEVICES=2 python learn.py --dataset WN18RR --model RESCAL --rank 512 --optimizer Adagrad \
+CUDA_VISIBLE_DEVICES=0 python learn.py --dataset WN18RR --model RESCAL --rank 512 --optimizer Adagrad \
 --learning_rate 1e-1 --batch_size 100 --regularizer DURA_RESCAL --reg 1e-1 --max_epochs 200 \
 --valid 5 -train -id 0 -save -weight --hidden_size 512 --a_hr 2
 
